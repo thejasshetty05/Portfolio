@@ -1,64 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Thejas | Data Science Graduate</title>
-
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thejas — Portfolio</title>
+<meta name="description" content="Portfolio of Thejas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <header>
-        <nav>
-            <a href="#" class="logo">Thejas</a>
+<!-- ========== CUSTOM CURSOR ========== -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
 
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+<!-- ========== NAVBAR ========== -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#top" class="nav-logo" data-close-menus>THEJAS</a>
+
+    <nav class="nav-desktop" aria-label="Primary">
+      <div class="nav-item" data-menu="work">
+        <button class="nav-trigger" aria-haspopup="true" aria-expanded="false" data-menu-trigger="work">
+          Work
+        </button>
+        <div class="nav-menu" data-menu-panel="work" role="menu">
+          <a href="#projects" role="menuitem" data-close-menus>Projects</a>
+          <a href="#research" role="menuitem" data-close-menus>Research</a>
+          <a href="#experience" role="menuitem" data-close-menus>Experience</a>
+        </div>
+      </div>
+
+      <div class="nav-item" data-menu="about">
+        <button class="nav-trigger" aria-haspopup="true" aria-expanded="false" data-menu-trigger="about">
+          About
+        </button>
+        <div class="nav-menu" data-menu-panel="about" role="menu">
+          <a href="#about" role="menuitem" data-close-menus>About</a>
+          <a href="#skills" role="menuitem" data-close-menus>Skills</a>
+          <a href="#education" role="menuitem" data-close-menus>Education</a>
+          <a href="#certifications" role="menuitem" data-close-menus>Certifications</a>
+        </div>
+      </div>
+
+      <div class="nav-item nav-item-connect" data-menu="connect">
+        <button class="nav-trigger nav-trigger-connect" aria-haspopup="true" aria-expanded="false" data-menu-trigger="connect" aria-label="Connect menu">
+          <span class="connect-icon" aria-hidden="true">
+            <span class="connect-icon-line connect-icon-v"></span>
+            <span class="connect-icon-line connect-icon-h"></span>
+          </span>
+        </button>
+        <div class="nav-menu nav-menu-connect" data-menu-panel="connect" role="menu">
+          <a href="https://github.com/your-username" target="_blank" rel="noopener" role="menuitem" data-close-menus>GitHub</a>
+          <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener" role="menuitem" data-close-menus>LinkedIn</a>
+          <a href="mailto:your-email@example.com" role="menuitem" data-close-menus>Email</a>
+          <a href="assets/documents/resume.pdf" target="_blank" rel="noopener" role="menuitem" data-close-menus>Resume</a>
+        </div>
+      </div>
+    </nav>
+
+    <button class="nav-mobile-toggle" id="mobileToggle" aria-haspopup="true" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <span class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+  </div>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="nav-mobile" id="mobileMenu">
+    <div class="nav-mobile-group">
+      <span class="nav-mobile-label">Work</span>
+      <a href="#projects" data-close-menus>Projects</a>
+      <a href="#research" data-close-menus>Research</a>
+      <a href="#experience" data-close-menus>Experience</a>
+    </div>
+    <div class="nav-mobile-group">
+      <span class="nav-mobile-label">About</span>
+      <a href="#about" data-close-menus>About</a>
+      <a href="#skills" data-close-menus>Skills</a>
+      <a href="#education" data-close-menus>Education</a>
+      <a href="#certifications" data-close-menus>Certifications</a>
+    </div>
+    <div class="nav-mobile-group">
+      <span class="nav-mobile-label">Connect</span>
+      <a href="https://github.com/your-username" target="_blank" rel="noopener" data-close-menus>GitHub</a>
+      <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener" data-close-menus>LinkedIn</a>
+      <a href="mailto:your-email@example.com" data-close-menus>Email</a>
+      <a href="assets/documents/resume.pdf" target="_blank" rel="noopener" data-close-menus>Resume</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ========== 01 / INTRODUCTION ========== -->
+  <section class="section hero" id="introduction" aria-label="Introduction">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">01 / Introduction</span>
+      </div>
+      <div class="section-content-col">
+        <h1 class="hero-heading">[ Main heading placeholder — e.g. a short line describing what you build or research ]</h1>
+        <p class="hero-desc">[ Short professional description placeholder — one to two sentences on who you are and what you focus on. ]</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" data-close-menus>
+            [ Primary button ]
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary" data-close-menus>[ Secondary button ]</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 02 / ABOUT ========== -->
+  <section class="section" id="about" aria-label="About">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">02 / About</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-heading">About</h2>
+        <div class="about-grid">
+          <p class="about-block">[ Short introduction placeholder — a couple of sentences about your background. ]</p>
+          <p class="about-block">[ Current professional context placeholder — what you're doing right now, role or focus. ]</p>
+          <p class="about-block">[ Areas of interest placeholder — topics or domains you care about. ]</p>
+          <p class="about-block">[ Current learning placeholder — what you're exploring at the moment. ]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 03 / SKILLS ========== -->
+  <section class="section" id="skills" aria-label="Skills">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">03 / Skills</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-heading">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 class="skill-group-title">Programming</h3>
+            <ul class="skill-list">
+              <li>[ Language placeholder ]</li>
+              <li>[ Language placeholder ]</li>
+              <li>[ Language placeholder ]</li>
+              <li>[ Language placeholder ]</li>
             </ul>
-        </nav>
-    </header>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Data &amp; ML</h3>
+            <ul class="skill-list">
+              <li>[ Tool/library placeholder ]</li>
+              <li>[ Tool/library placeholder ]</li>
+              <li>[ Tool/library placeholder ]</li>
+              <li>[ Tool/library placeholder ]</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Web</h3>
+            <ul class="skill-list">
+              <li>[ Framework placeholder ]</li>
+              <li>[ Framework placeholder ]</li>
+              <li>[ Framework placeholder ]</li>
+              <li>[ Framework placeholder ]</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Tools &amp; Infrastructure</h3>
+            <ul class="skill-list">
+              <li>[ Tool placeholder ]</li>
+              <li>[ Tool placeholder ]</li>
+              <li>[ Tool placeholder ]</li>
+              <li>[ Tool placeholder ]</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <main>
+  <!-- ========== 04 / EXPERIENCE ========== -->
+  <section class="section" id="experience" aria-label="Experience">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">04 / Experience</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-heading">Experience</h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3 class="timeline-role">[ Role placeholder ]</h3>
+                <span class="timeline-period">[ Period placeholder ]</span>
+              </div>
+              <p class="timeline-company">[ Company placeholder ]</p>
+              <p class="timeline-desc">[ Description placeholder — what the role involved. ]</p>
+              <ul class="timeline-list">
+                <li>[ Responsibility placeholder ]</li>
+                <li>[ Responsibility placeholder ]</li>
+                <li>[ Responsibility placeholder ]</li>
+              </ul>
+              <p class="timeline-tech">[ Technologies / areas placeholder ]</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3 class="timeline-role">[ Role placeholder ]</h3>
+                <span class="timeline-period">[ Period placeholder ]</span>
+              </div>
+              <p class="timeline-company">[ Company placeholder ]</p>
+              <p class="timeline-desc">[ Description placeholder — what the role involved. ]</p>
+              <ul class="timeline-list">
+                <li>[ Responsibility placeholder ]</li>
+                <li>[ Responsibility placeholder ]</li>
+              </ul>
+              <p class="timeline-tech">[ Technologies / areas placeholder ]</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
 
-        <section id="hero">
-            <h1>Hi, I'm Thejas.</h1>
-            <p>Data Science Graduate & Technical Professional</p>
-        </section>
+  <!-- ========== 05 / PROJECTS ========== -->
+  <section class="section" id="projects" aria-label="Projects">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">05 / Projects</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-heading">Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3 class="project-title">[ Project title ]</h3>
+            <p class="project-desc">[ Short description placeholder of what the project does and why it exists. ]</p>
+            <p class="project-tech">[ Technologies placeholder ]</p>
+            <div class="project-links">
+              <a href="#" class="project-link">GitHub</a>
+              <a href="#" class="project-link">Details</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3 class="project-title">[ Project title ]</h3>
+            <p class="project-desc">[ Short description placeholder of what the project does and why it exists. ]</p>
+            <p class="project-tech">[ Technologies placeholder ]</p>
+            <div class="project-links">
+              <a href="#" class="project-link">GitHub</a>
+              <a href="#" class="project-link">Live demo</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3 class="project-title">[ Project title ]</h3>
+            <p class="project-desc">[ Short description placeholder of what the project does and why it exists. ]</p>
+            <p class="project-tech">[ Technologies placeholder ]</p>
+            <div class="project-links">
+              <a href="#" class="project-link">GitHub</a>
+              <a href="#" class="project-link">Details</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3 class="project-title">[ Project title ]</h3>
+            <p class="project-desc">[ Short description placeholder of what the project does and why it exists. ]</p>
+            <p class="project-tech">[ Technologies placeholder ]</p>
+            <div class="project-links">
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-        </section>
+  <!-- ========== 06 / RESEARCH ========== -->
+  <section class="section" id="research" aria-label="Research">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">06 / Research</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-heading">Research</h2>
+        <div class="research-list">
+          <article class="research-item">
+            <div class="research-head">
+              <h3 class="research-title">[ Research title placeholder ]</h3>
+              <span class="research-org">[ Institution / lab placeholder ]</span>
+            </div>
+            <p class="research-desc">[ Short description placeholder of the research and its aims. ]</p>
+            <p class="research-areas">[ Research areas placeholder ]</p>
+            <a href="#" class="project-link">Paper / details</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-        </section>
+  <!-- ========== 07 / EDUCATION ========== -->
+  <section class="section" id="education" aria-label="Education">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">07 / Education</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-heading">Education</h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3 class="timeline-role">[ Degree placeholder ]</h3>
+                <span class="timeline-period">[ Period placeholder ]</span>
+              </div>
+              <p class="timeline-company">[ Institution placeholder ]</p>
+              <p class="timeline-desc">[ Optional short details placeholder ]</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-        </section>
+  <!-- ========== 08 / CERTIFICATIONS ========== -->
+  <section class="section" id="certifications" aria-label="Certifications">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">08 / Certifications</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-heading">Certifications</h2>
+        <div class="cert-grid">
+          <article class="cert-card">
+            <h3 class="cert-title">[ Certificate title ]</h3>
+            <p class="cert-issuer">[ Issuer placeholder ]</p>
+            <span class="cert-year">[ Year ]</span>
+            <a href="#" class="project-link">View certificate</a>
+          </article>
+          <article class="cert-card">
+            <h3 class="cert-title">[ Certificate title ]</h3>
+            <p class="cert-issuer">[ Issuer placeholder ]</p>
+            <span class="cert-year">[ Year ]</span>
+            <a href="#" class="project-link">View certificate</a>
+          </article>
+          <article class="cert-card">
+            <h3 class="cert-title">[ Certificate title ]</h3>
+            <p class="cert-issuer">[ Issuer placeholder ]</p>
+            <span class="cert-year">[ Year ]</span>
+            <a href="#" class="project-link">View certificate</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-        </section>
+  <!-- ========== 09 / CONTACT ========== -->
+  <section class="section section-contact" id="contact" aria-label="Contact">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">09 / Contact</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-heading">Contact</h2>
+        <p class="contact-msg">[ Short contact message placeholder — an invitation to reach out. ]</p>
+        <ul class="contact-list">
+          <li><span class="contact-label">Email</span><a href="mailto:your-email@example.com">your-email@example.com</a></li>
+          <li><span class="contact-label">LinkedIn</span><a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">linkedin.com/in/your-username</a></li>
+          <li><span class="contact-label">GitHub</span><a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></li>
+          <li><span class="contact-label">Resume</span><a href="assets/documents/resume.pdf" target="_blank" rel="noopener">Download resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-        </section>
+</main>
 
-    </main>
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-name">THEJAS</span>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:your-email@example.com">Email</a>
+    </nav>
+    <span class="footer-copy">© <span id="year"></span> Thejas. All rights reserved.</span>
+  </div>
+</footer>
 
-    <footer>
-        <p>&copy; 2026 Thejas. All rights reserved.</p>
-    </footer>
+<!-- ========== PAGE DOT NAV ========== -->
+<nav class="page-nav" aria-label="Section navigation">
+  <a href="#introduction" class="page-nav-dot" data-page-dot="introduction"><span class="page-nav-label">Intro</span></a>
+  <a href="#about" class="page-nav-dot" data-page-dot="about"><span class="page-nav-label">About</span></a>
+  <a href="#skills" class="page-nav-dot" data-page-dot="skills"><span class="page-nav-label">Skills</span></a>
+  <a href="#experience" class="page-nav-dot" data-page-dot="experience"><span class="page-nav-label">Experience</span></a>
+  <a href="#projects" class="page-nav-dot" data-page-dot="projects"><span class="page-nav-label">Projects</span></a>
+  <a href="#research" class="page-nav-dot" data-page-dot="research"><span class="page-nav-label">Research</span></a>
+  <a href="#education" class="page-nav-dot" data-page-dot="education"><span class="page-nav-label">Education</span></a>
+  <a href="#certifications" class="page-nav-dot" data-page-dot="certifications"><span class="page-nav-label">Certs</span></a>
+  <a href="#contact" class="page-nav-dot" data-page-dot="contact"><span class="page-nav-label">Contact</span></a>
+</nav>
 
-    <script src="js/script.js"></script>
+<!-- ========== FLOATING ACTION DOCK ========== -->
+<div class="action-dock" id="actionDock">
+  <a href="#top" class="dock-item" data-close-menus aria-label="Back to top">
+    <span class="dock-item-tip">Top</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </a>
+  <a href="#projects" class="dock-item" data-close-menus aria-label="Projects">
+    <span class="dock-item-tip">Projects</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+  </a>
+  <div class="dock-divider" aria-hidden="true"></div>
+  <a href="mailto:your-email@example.com" class="dock-item" aria-label="Email">
+    <span class="dock-item-tip">Email</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>
+  </a>
+  <a href="https://github.com/your-username" target="_blank" rel="noopener" class="dock-item" aria-label="GitHub">
+    <span class="dock-item-tip">GitHub</span>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.96.57.1.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.82 1.19 3.08 0 4.41-2.7 5.38-5.27 5.67.42.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"></path></svg>
+  </a>
+  <div class="dock-divider" aria-hidden="true"></div>
+  <a href="#contact" class="dock-item" data-close-menus aria-label="Contact">
+    <span class="dock-item-tip">Contact</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+  </a>
+</div>
 
+<script src="js/script.js"></script>
 </body>
 </html>
