@@ -1,64 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Thejas | Data Science Graduate</title>
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thejas Shetty — Personal Digital Space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body class="theme-dark">
 
-<body>
-
-    <header>
-        <nav>
-            <a href="#" class="logo">Thejas</a>
-
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+  <!-- Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#hero" class="brand-monogram" aria-label="Home">TS</a>
+      
+      <nav class="primary-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <button class="nav-link" aria-expanded="false" aria-controls="dropdown-work">WORK</button>
+            <ul class="dropdown-menu" id="dropdown-work">
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#certifications">Certifications</a></li>
             </ul>
-        </nav>
-    </header>
+          </li>
+          <li class="nav-item has-dropdown">
+            <button class="nav-link" aria-expanded="false" aria-controls="dropdown-about">ABOUT</button>
+            <ul class="dropdown-menu" id="dropdown-about">
+              <li><a href="#intro">Introduction</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#saga" class="nav-link">SAGA</a>
+          </li>
+        </ul>
+      </nav>
 
-    <main>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
 
-        <section id="hero">
-            <h1>Hi, I'm Thejas.</h1>
-            <p>Data Science Graduate & Technical Professional</p>
-        </section>
+  <main>
+    <!-- Section 1: Hero -->
+    <section class="section-hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="hero-name">THEJAS SHETTY</h1>
+          <p class="hero-tagline mono-label">[SHORT PLACEHOLDER INTRODUCTION / TITLE]</p>
+          <div class="hero-statement">
+            <p>[A short narrative describing things I do, design philosophy, and technical direction. Generous whitespace and strong typography.]</p>
+          </div>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">Explore Work ↓</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
 
-        <section id="about">
-            <h2>About Me</h2>
-        </section>
+        <div class="hero-right">
+          <div class="floating-cluster" id="floatingCluster" aria-label="Interactive photo cluster">
+            <div class="cluster-item photo-1" tabindex="0" role="button" aria-label="View photo 1" data-src="assets/images/photo1.jpg" data-caption="[Saga: Mountain Trail / Trekking]">
+              <div class="img-wrapper">
+                <div class="img-placeholder">PHOTO 1</div>
+              </div>
+            </div>
+            <div class="cluster-item photo-2" tabindex="0" role="button" aria-label="View photo 2" data-src="assets/images/photo2.jpg" data-caption="[Saga: Night Drive / Exploration]">
+              <div class="img-wrapper">
+                <div class="img-placeholder">PHOTO 2</div>
+              </div>
+            </div>
+            <div class="cluster-item photo-3" tabindex="0" role="button" aria-label="View photo 3" data-src="assets/images/photo3.jpg" data-caption="[Saga: Studio Workspace]">
+              <div class="img-wrapper">
+                <div class="img-placeholder">PHOTO 3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-        </section>
+    <!-- Section 2: Work -->
+    <section class="section-work" id="work">
+      <div class="container">
+        <header class="section-header">
+          <span class="mono-label">01 // TRACK RECORD</span>
+          <h2 class="section-title">WORK</h2>
+        </header>
 
-        <section id="projects">
-            <h2>Projects</h2>
-        </section>
+        <!-- Experience Timeline -->
+        <div class="sub-block" id="experience">
+          <h3 class="sub-block-title mono-label">EXPERIENCE</h3>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-meta mono-label">[DURATION: PRESENT]</div>
+              <div class="timeline-content">
+                <div class="role-header">
+                  <h4 class="company-name">[CURRENT COMPANY NAME]</h4>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="link-external">VIEW COMPANY ↗</a>
+                </div>
+                <div class="role-title">[ROLE / DESIGNATION]</div>
+                <p class="role-desc">[Short description of initiatives, systems engineered, and primary responsibilities.]</p>
+                <ul class="tech-stack-list">
+                  <li>[TECH 1]</li>
+                  <li>[TECH 2]</li>
+                  <li>[TECH 3]</li>
+                </ul>
+              </div>
+            </article>
 
-        <section id="experience">
-            <h2>Experience</h2>
-        </section>
+            <article class="timeline-item">
+              <div class="timeline-meta mono-label">[DURATION: PAST]</div>
+              <div class="timeline-content">
+                <div class="role-header">
+                  <h4 class="company-name">[INTERNSHIP ORGANIZATION]</h4>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="link-external">VIEW ORGANIZATION ↗</a>
+                </div>
+                <div class="role-title">[INTERNSHIP ROLE]</div>
+                <p class="role-desc">[Details regarding contribution, research projects, data pipelines, or platform feature sets.]</p>
+                <ul class="tech-stack-list">
+                  <li>[TECH A]</li>
+                  <li>[TECH B]</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
 
-        <section id="contact">
-            <h2>Contact</h2>
-        </section>
+        <!-- Projects -->
+        <div class="sub-block" id="projects">
+          <h3 class="sub-block-title mono-label">SELECTED PROJECTS</h3>
+          <div class="projects-list">
+            
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-details">
+                <h4 class="project-title">[PROJECT NAME 01]</h4>
+                <div class="project-statement">
+                  <p class="mono-label">PROBLEM</p>
+                  <p>[Problem statement outlining bottlenecks or the targeted challenge.]</p>
+                </div>
+                <div class="project-statement">
+                  <p class="mono-label">SOLUTION</p>
+                  <p>[Engineered solution architecture, technical execution, and outcomes.]</p>
+                </div>
+                <ul class="tech-stack-list">
+                  <li>[TypeScript]</li>
+                  <li>[Python]</li>
+                  <li>[AWS]</li>
+                </ul>
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="link-external">GitHub ↗</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="link-external">Live Demo ↗</a>
+                </div>
+              </div>
 
-    </main>
+              <div class="project-slider" data-slider>
+                <div class="slider-viewport">
+                  <div class="slider-track">
+                    <div class="slider-slide"><div class="img-placeholder">[PROJECT 1 — SLIDE 1]</div></div>
+                    <div class="slider-slide"><div class="img-placeholder">[PROJECT 1 — SLIDE 2]</div></div>
+                    <div class="slider-slide"><div class="img-placeholder">[PROJECT 1 — SLIDE 3]</div></div>
+                  </div>
+                </div>
+                <div class="slider-controls">
+                  <button class="slider-btn prev" aria-label="Previous slide">←</button>
+                  <span class="slider-counter mono-label">1 / 3</span>
+                  <button class="slider-btn next" aria-label="Next slide">→</button>
+                </div>
+              </div>
+            </article>
 
-    <footer>
-        <p>&copy; 2026 Thejas. All rights reserved.</p>
-    </footer>
+            <!-- Project 2 -->
+            <article class="project-card">
+              <div class="project-details">
+                <h4 class="project-title">[PROJECT NAME 02]</h4>
+                <div class="project-statement">
+                  <p class="mono-label">PROBLEM</p>
+                  <p>[Problem statement for project two.]</p>
+                </div>
+                <div class="project-statement">
+                  <p class="mono-label">SOLUTION</p>
+                  <p>[Technical implementation and results achieved.]</p>
+                </div>
+                <ul class="tech-stack-list">
+                  <li>[Go]</li>
+                  <li>[Docker]</li>
+                  <li>[PostgreSQL]</li>
+                </ul>
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="link-external">GitHub ↗</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="link-external">Live Demo ↗</a>
+                </div>
+              </div>
 
-    <script src="js/script.js"></script>
+              <div class="project-slider" data-slider>
+                <div class="slider-viewport">
+                  <div class="slider-track">
+                    <div class="slider-slide"><div class="img-placeholder">[PROJECT 2 — SLIDE 1]</div></div>
+                    <div class="slider-slide"><div class="img-placeholder">[PROJECT 2 — SLIDE 2]</div></div>
+                  </div>
+                </div>
+                <div class="slider-controls">
+                  <button class="slider-btn prev" aria-label="Previous slide">←</button>
+                  <span class="slider-counter mono-label">1 / 2</span>
+                  <button class="slider-btn next" aria-label="Next slide">→</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
 
+        <!-- Certifications -->
+        <div class="sub-block" id="certifications">
+          <h3 class="sub-block-title mono-label">CERTIFICATIONS</h3>
+          <div class="cert-grid">
+            <div class="cert-card">
+              <div class="cert-preview">
+                <div class="img-placeholder mono-label">[CERT PREVIEW]</div>
+              </div>
+              <div class="cert-info">
+                <h4 class="cert-title">[CERTIFICATE TITLE 01]</h4>
+                <p class="cert-meta mono-label">[ISSUER] // [YEAR]</p>
+                <a href="assets/certificates/cert1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Certificate ↗</a>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-preview">
+                <div class="img-placeholder mono-label">[CERT PREVIEW]</div>
+              </div>
+              <div class="cert-info">
+                <h4 class="cert-title">[CERTIFICATE TITLE 02]</h4>
+                <p class="cert-meta mono-label">[ISSUER] // [YEAR]</p>
+                <a href="assets/certificates/cert2.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Certificate ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: About -->
+    <section class="section-about" id="about">
+      <div class="container">
+        <header class="section-header">
+          <span class="mono-label">02 // PROFILE</span>
+          <h2 class="section-title">ABOUT</h2>
+        </header>
+
+        <!-- Intro -->
+        <div class="about-intro" id="intro">
+          <p class="lead-text">[Short intro placeholder: background, perspective, and core operating principles.]</p>
+          <p>[Placeholder detailing career vision, key interests in software engineering, distributed systems, or design.]</p>
+        </div>
+
+        <!-- Education -->
+        <div class="sub-block" id="education">
+          <h3 class="sub-block-title mono-label">EDUCATION</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-meta mono-label">[YEAR – YEAR]</div>
+              <div class="timeline-content">
+                <h4 class="degree-title">[DEGREE / COURSE 01]</h4>
+                <p class="institution">[INSTITUTION NAME]</p>
+                <p class="role-desc">[Brief description of specialization or thesis.]</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-meta mono-label">[YEAR – YEAR]</div>
+              <div class="timeline-content">
+                <h4 class="degree-title">[DEGREE / COURSE 02]</h4>
+                <p class="institution">[INSTITUTION NAME]</p>
+                <p class="role-desc">[Key electives and honors.]</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-meta mono-label">[YEAR – YEAR]</div>
+              <div class="timeline-content">
+                <h4 class="degree-title">[DEGREE / COURSE 03]</h4>
+                <p class="institution">[INSTITUTION NAME]</p>
+                <p class="role-desc">[Foundation coursework & achievements.]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="sub-block" id="skills">
+          <h3 class="sub-block-title mono-label">TECHNICAL COMPETENCIES</h3>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4 class="category-name mono-label">PROGRAMMING</h4>
+              <div class="tag-cloud">
+                <span class="tag">[Python]</span>
+                <span class="tag">[JavaScript / TS]</span>
+                <span class="tag">[Go]</span>
+                <span class="tag">[C++]</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4 class="category-name mono-label">DATA & MACHINE LEARNING</h4>
+              <div class="tag-cloud">
+                <span class="tag">[PyTorch]</span>
+                <span class="tag">[Pandas]</span>
+                <span class="tag">[SQL / NoSQL]</span>
+                <span class="tag">[Model Fine-tuning]</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4 class="category-name mono-label">WEB & ARCHITECTURE</h4>
+              <div class="tag-cloud">
+                <span class="tag">[REST / GraphQL]</span>
+                <span class="tag">[Node.js]</span>
+                <span class="tag">[HTML5 / Modern CSS]</span>
+                <span class="tag">[Microservices]</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4 class="category-name mono-label">TOOLS & INFRASTRUCTURE</h4>
+              <div class="tag-cloud">
+                <span class="tag">[Git]</span>
+                <span class="tag">[Docker]</span>
+                <span class="tag">[AWS]</span>
+                <span class="tag">[CI / CD Pipelines]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Saga -->
+    <section class="section-saga" id="saga">
+      <div class="container">
+        <header class="section-header">
+          <span class="mono-label">03 // PERSONAL PURSUITS</span>
+          <h2 class="section-title">SAGA</h2>
+          <p class="saga-subheading">The things that happen when I'm not working.</p>
+        </header>
+
+        <div class="saga-grid">
+          <article class="saga-card" tabindex="0" role="button" aria-label="Open image details" data-src="assets/images/trekking.jpg" data-caption="[Trekking & Summits — Trail exploration]">
+            <div class="saga-media">
+              <div class="img-placeholder">[TREKKING & EXPEDITIONS]</div>
+            </div>
+            <div class="saga-details">
+              <span class="mono-label">[TREKKING]</span>
+              <p>[Journeys, high passes, and remote mountain routes.]</p>
+            </div>
+          </article>
+
+          <article class="saga-card" tabindex="0" role="button" aria-label="Open image details" data-src="assets/images/travel.jpg" data-caption="[Travel & Culture — Field Notes]">
+            <div class="saga-media">
+              <div class="img-placeholder">[TRAVEL & ADVENTURES]</div>
+            </div>
+            <div class="saga-details">
+              <span class="mono-label">[TRAVEL]</span>
+              <p>[Observations, cross-country drives, and off-grid exploration.]</p>
+            </div>
+          </article>
+
+          <article class="saga-card" tabindex="0" role="button" aria-label="Open image details" data-src="assets/images/sports.jpg" data-caption="[Athletics & Training]">
+            <div class="saga-media">
+              <div class="img-placeholder">[SPORTS & FITNESS]</div>
+            </div>
+            <div class="saga-details">
+              <span class="mono-label">[SPORTS]</span>
+              <p>[Competitive sport, endurance, and physical discipline.]</p>
+            </div>
+          </article>
+
+          <article class="saga-card" tabindex="0" role="button" aria-label="Open image details" data-src="assets/images/hobbies.jpg" data-caption="[Creative Hobbies & Analog Gear]">
+            <div class="saga-media">
+              <div class="img-placeholder">[PHOTOGRAPHY & HOBBIES]</div>
+            </div>
+            <div class="saga-details">
+              <span class="mono-label">[DISCOVERY]</span>
+              <p>[Analog photography, reading, and experiments outside the terminal.]</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Contact -->
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <header class="section-header">
+          <span class="mono-label">04 // CONNECT</span>
+          <h2 class="section-title">CONTACT</h2>
+        </header>
+
+        <div class="contact-card">
+          <p class="contact-desc">[Always open to technical discussions, collaborations, and new initiatives.]</p>
+          <div class="contact-links">
+            <a href="mailto:placeholder@thejasshetty.com" class="contact-action-link">placeholder@thejasshetty.com ↗</a>
+            <div class="contact-sublinks">
+              <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <span class="separator">/</span>
+              <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <span class="separator">/</span>
+              <a href="assets/documents/Thejas_Shetty_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p class="footer-name">THEJAS SHETTY</p>
+        <p class="footer-copy mono-label">© 2026. ALL RIGHTS RESERVED.</p>
+      </div>
+      <div class="footer-right mono-label">
+        <a href="#" target="_blank" rel="noopener noreferrer">GITHUB</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+        <a href="mailto:placeholder@thejasshetty.com">EMAIL</a>
+        <a href="assets/documents/Thejas_Shetty_Resume.pdf" target="_blank" rel="noopener noreferrer">RESUME</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Image Modal / Lightbox -->
+  <dialog class="lightbox-modal" id="lightboxModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Close dialog">&times;</button>
+      <div class="modal-media-wrapper">
+        <div class="modal-placeholder-box" id="modalBox">
+          <span id="modalCaption" class="mono-label">PHOTO PREVIEW</span>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
 </body>
 </html>
