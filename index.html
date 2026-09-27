@@ -1,64 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Thejas | Data Science Graduate</title>
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="THEJAS SHETTY — A personal digital space.">
+  <title>THEJAS SHETTY — Personal Digital Space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-    <header>
-        <nav>
-            <a href="#" class="logo">Thejas</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Thejas Shetty home">THEJAS<span>.</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      <a href="#work">WORK <span>01</span></a>
+      <a href="#about">ABOUT <span>02</span></a>
+      <a href="#saga">SAGA <span>03</span></a>
+    </nav>
+  </header>
 
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">PERSONAL DIGITAL SPACE / 001</p>
+        <h1>THEJAS<br><em>SHETTY</em></h1>
+        <p class="hero-intro">[INTRODUCTION]</p>
+        <p class="mono hero-status">CURIOUS BY DEFAULT · BUILDING · LEARNING · EXPLORING</p>
+        <div class="things">
+          <span>THINGS I DO</span>
+          <div>
+            <b>[THING ONE]</b><b>[THING TWO]</b><b>[THING THREE]</b>
+          </div>
+        </div>
+      </div>
 
-    <main>
+      <div class="hero-visual" aria-label="Personal photographs">
+        <div class="photo photo-a" data-image="assets/images/photo-01.jpg"><span>[PHOTO]</span></div>
+        <div class="photo photo-b" data-image="assets/images/photo-02.jpg"><span>[PHOTO]</span></div>
+        <div class="photo photo-c" data-image="assets/images/photo-03.jpg"><span>[PHOTO]</span></div>
+        <div class="photo photo-d" data-image="assets/images/photo-04.jpg"><span>[PHOTO]</span></div>
+        <div class="visual-note">[ADD PHOTOS TO<br>assets/images]</div>
+      </div>
+    </section>
 
-        <section id="hero">
-            <h1>Hi, I'm Thejas.</h1>
-            <p>Data Science Graduate & Technical Professional</p>
-        </section>
+    <section id="about" class="section about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / ABOUT</p>
+        <h2>WHO I AM<br><span>[AND WHERE I'M GOING]</span></h2>
+      </div>
 
-        <section id="about">
-            <h2>About Me</h2>
-        </section>
+      <div class="about-grid">
+        <div class="about-intro reveal">
+          <p class="lead">[SHORT INTRODUCTION]</p>
+          <p>[BACKGROUND / CURRENT INTERESTS / CAREER DIRECTION]</p>
+        </div>
 
-        <section id="skills">
-            <h2>Skills</h2>
-        </section>
+        <div class="timeline reveal">
+          <p class="label">EDUCATION</p>
+          <article class="timeline-item">
+            <span>01</span>
+            <div><h3>[DEGREE / COURSE]</h3><p>[INSTITUTION]</p><small>[PERIOD]</small></div>
+          </article>
+          <article class="timeline-item">
+            <span>02</span>
+            <div><h3>[DEGREE / COURSE]</h3><p>[INSTITUTION]</p><small>[PERIOD]</small></div>
+          </article>
+          <article class="timeline-item">
+            <span>03</span>
+            <div><h3>[DEGREE / COURSE]</h3><p>[INSTITUTION]</p><small>[PERIOD]</small></div>
+          </article>
+        </div>
 
-        <section id="projects">
-            <h2>Projects</h2>
-        </section>
+        <div class="skills reveal">
+          <p class="label">SKILLS</p>
+          <div class="skill-group"><span>PROGRAMMING</span><div>[SKILL] · [SKILL] · [SKILL]</div></div>
+          <div class="skill-group"><span>DATA & ML</span><div>[SKILL] · [SKILL] · [SKILL]</div></div>
+          <div class="skill-group"><span>WEB</span><div>[SKILL] · [SKILL] · [SKILL]</div></div>
+          <div class="skill-group"><span>TOOLS & INFRA</span><div>[SKILL] · [SKILL] · [SKILL]</div></div>
+        </div>
+      </div>
+    </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-        </section>
+    <section id="saga" class="section saga">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / SAGA</p>
+        <h2>THE THINGS THAT<br><span>HAPPEN OUTSIDE WORK.</span></h2>
+      </div>
+      <div class="saga-grid">
+        <div class="saga-copy reveal">
+          <p class="lead">[A SHORT PERSONAL DESCRIPTION]</p>
+          <p>[TRAVEL / TREKKING / SPORTS / HOBBIES / ADVENTURES / PHOTOGRAPHY / INTERESTS]</p>
+        </div>
+        <div class="saga-collage reveal">
+          <div class="saga-card s1">[PHOTO]</div>
+          <div class="saga-card s2">[PHOTO]</div>
+          <div class="saga-card s3">[PHOTO]</div>
+          <div class="saga-card s4">[PHOTO]</div>
+        </div>
+      </div>
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-        </section>
+    <section id="work" class="section work">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / WORK</p>
+        <h2>WORK<br><span>THAT MATTERS.</span></h2>
+      </div>
 
-    </main>
+      <div class="experience">
+        <div class="work-label"><span>EXPERIENCE</span><i>01</i></div>
+        <article class="experience-row reveal">
+          <div><p class="mono">CURRENT ROLE / [START DATE]</p><h3>[COMPANY NAME]</h3></div>
+          <div><h4>[ROLE]</h4><p>[SHORT DESCRIPTION]</p><p class="muted">[RESPONSIBILITIES]</p><p class="mono">[TECHNOLOGIES / TOOLS]</p></div>
+          <a class="text-link" href="#" aria-label="View company">VIEW COMPANY ↗</a>
+        </article>
+        <article class="experience-row reveal">
+          <div><p class="mono">INTERNSHIP / [DURATION]</p><h3>[ORGANIZATION]</h3></div>
+          <div><h4>[INTERNSHIP ROLE]</h4><p>[DESCRIPTION]</p><p class="muted">[RESPONSIBILITIES]</p><p class="mono">[TECHNOLOGIES / TOOLS]</p></div>
+          <a class="text-link" href="#" aria-label="View relevant link">RELEVANT LINK ↗</a>
+        </article>
+      </div>
 
-    <footer>
-        <p>&copy; 2026 Thejas. All rights reserved.</p>
-    </footer>
+      <div class="projects">
+        <div class="work-label"><span>PROJECTS</span><i>02</i></div>
 
-    <script src="js/script.js"></script>
+        <article class="project reveal" data-slider>
+          <div class="project-info">
+            <p class="mono">PROJECT / 001</p>
+            <h3>[PROJECT NAME]</h3>
+            <div><span class="label">PROBLEM</span><p>[PROBLEM STATEMENT]</p></div>
+            <div><span class="label">SOLUTION</span><p>[SOLUTION]</p></div>
+            <div><span class="label">TECH</span><p>[TECHNOLOGIES]</p></div>
+            <div class="project-links"><a href="#">GITHUB ↗</a><a href="#">LIVE DEMO ↗</a></div>
+          </div>
+          <div class="slider">
+            <div class="slides">
+              <div class="slide active">[PROJECT IMAGE]</div>
+              <div class="slide">[PROJECT IMAGE]</div>
+              <div class="slide">[PROJECT IMAGE]</div>
+            </div>
+            <div class="slider-controls">
+              <button data-prev aria-label="Previous image">←</button>
+              <span class="counter">01 / 03</span>
+              <button data-next aria-label="Next image">→</button>
+            </div>
+          </div>
+        </article>
 
+        <article class="project reveal" data-slider>
+          <div class="project-info">
+            <p class="mono">PROJECT / 002</p>
+            <h3>[PROJECT NAME]</h3>
+            <div><span class="label">PROBLEM</span><p>[PROBLEM STATEMENT]</p></div>
+            <div><span class="label">SOLUTION</span><p>[SOLUTION]</p></div>
+            <div><span class="label">TECH</span><p>[TECHNOLOGIES]</p></div>
+            <div class="project-links"><a href="#">GITHUB ↗</a><a href="#">LIVE DEMO ↗</a></div>
+          </div>
+          <div class="slider">
+            <div class="slides">
+              <div class="slide active">[PROJECT IMAGE]</div>
+              <div class="slide">[PROJECT IMAGE]</div>
+              <div class="slide">[PROJECT IMAGE]</div>
+            </div>
+            <div class="slider-controls">
+              <button data-prev aria-label="Previous image">←</button>
+              <span class="counter">01 / 03</span>
+              <button data-next aria-label="Next image">→</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="certifications">
+        <div class="work-label"><span>CERTIFICATIONS</span><i>03</i></div>
+        <div class="certificate-grid">
+          <article class="certificate reveal"><span>01</span><h3>[CERTIFICATE TITLE]</h3><p>[ISSUING ORGANIZATION]</p><small>[DATE / YEAR]</small><button class="certificate-btn">VIEW CERTIFICATE ↗</button></article>
+          <article class="certificate reveal"><span>02</span><h3>[CERTIFICATE TITLE]</h3><p>[ISSUING ORGANIZATION]</p><small>[DATE / YEAR]</small><button class="certificate-btn">VIEW CERTIFICATE ↗</button></article>
+          <article class="certificate reveal"><span>03</span><h3>[CERTIFICATE TITLE]</h3><p>[ISSUING ORGANIZATION]</p><small>[DATE / YEAR]</small><button class="certificate-btn">VIEW CERTIFICATE ↗</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="eyebrow">CONTACT / 04</p>
+      <h2>LET'S TALK<br><span>WHEN THERE'S SOMETHING TO BUILD.</span></h2>
+      <div class="contact-links">
+        <a href="mailto:[EMAIL]">[EMAIL] ↗</a>
+        <a href="#">GITHUB ↗</a>
+        <a href="#">LINKEDIN ↗</a>
+        <a href="#">RESUME ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>THEJAS SHETTY</strong>
+    <div><a href="#">GITHUB</a><a href="#">LINKEDIN</a><a href="mailto:[EMAIL]">EMAIL</a><a href="#">RESUME</a></div>
+    <span>© <span id="year"></span> / ALL RIGHTS RESERVED</span>
+  </footer>
+
+  <div class="modal" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="modal-close" aria-label="Close image viewer">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
